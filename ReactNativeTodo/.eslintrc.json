@@ -1,0 +1,39 @@
+{
+    "env": {
+        "es2021": true,
+        "browser": true,
+        "node": true,
+        "jest": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+          },
+          "ecmaVersion": 12,
+          "sourceType": "module"
+    },
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      },
+      "react-native/style-sheet-object-names": ["EStyleSheet", "OtherStyleSheet", "PStyleSheet"]
+    },
+    "plugins": ["react", "react-native"],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": ["warn",{"extensions": [".jsx", ".js"]}],
+        "no-console": "off",
+        "react/prop-types": "off",
+        "import/prefer-default-export": "off",
+        "no-alert": "off",
+        "react/require-default-props": "off"
+    }
+  }
